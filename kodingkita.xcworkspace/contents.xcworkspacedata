@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Kodingkita/Kodingkita.xcodeproj">
+   </FileRef>
+   <Group
+      location = "container:"
+      name = "Dependencies">
+      <FileRef
+         location = "group:AppCore/AppCore.xcodeproj">
+      </FileRef>
+      <Group
+         location = "container:"
+         name = "Common">
+         <FileRef
+            location = "group:Shared/Shared.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:UserPreferenceService/UserPreferenceService.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:"
+         name = "Feature">
+         <FileRef
+            location = "group:Category/Category.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Home/Home.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Profile/Profile.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:"
+         name = "Flow">
+         <FileRef
+            location = "group:AppFlow/AppFlow.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

@@ -1,0 +1,82 @@
+platform :ios, '11.0'
+
+use_frameworks!
+
+workspace 'kodingkita'
+
+def core_pods
+	pod 'Alamofire'
+	pod 'IQKeyboardManagerSwift'
+	pod 'SDWebImage'
+	pod 'SwiftyJSON'
+
+end
+
+# Core Module
+target 'AppCore' do
+  project 'AppCore/AppCore.project'
+  core_pods
+
+end
+
+# Shared Module
+def shared_pods
+  core_pods
+  
+end
+
+target 'Shared' do
+  project 'Shared/Shared.project'
+  shared_pods
+
+end
+
+# Application
+def kodingkita_pods
+  core_pods
+
+end
+
+target 'Kodingkita' do
+  project 'Kodingkita/Kodingkita.project'
+  kodingkita_pods
+
+end
+
+## ---------------- Feature --------------------- ##
+
+# Home
+def home_pods
+  core_pods
+
+end
+
+target 'Home' do
+  project 'Home/Home.project'
+  home_pods
+
+end
+
+# Category
+def category_pods
+  core_pods
+
+end
+
+target 'Category' do
+  project 'Category/Category.project'
+  category_pods
+
+end
+
+# Profile
+def profile_pods
+  core_pods
+
+end
+
+target 'Profile' do
+  project 'Profile/Profile.project'
+  profile_pods
+
+end
