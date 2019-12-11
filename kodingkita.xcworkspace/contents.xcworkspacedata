@@ -24,10 +24,10 @@
          location = "container:"
          name = "Feature">
          <FileRef
-            location = "group:Category/Category.xcodeproj">
+            location = "group:Home/Home.xcodeproj">
          </FileRef>
          <FileRef
-            location = "group:Home/Home.xcodeproj">
+            location = "group:Category/Category.xcodeproj">
          </FileRef>
          <FileRef
             location = "group:Profile/Profile.xcodeproj">
@@ -38,6 +38,9 @@
          name = "Flow">
          <FileRef
             location = "group:AppFlow/AppFlow.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:HomeFlow/HomeFlow.xcodeproj">
          </FileRef>
       </Group>
    </Group>
