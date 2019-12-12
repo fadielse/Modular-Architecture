@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1BD5A20023A092A000C563C4 /* Shared.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD5A1FE23A092A000C563C4 /* Shared.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1BEC25D423A0CD14005ABA4E /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEC25D323A0CD14005ABA4E /* Storyboarded.swift */; };
 		E965F1C7D357A6808F736625 /* Pods_Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB609BFA0CCA623C23C9613 /* Pods_Shared.framework */; };
 /* End PBXBuildFile section */
 
@@ -17,7 +16,6 @@
 		1BD5A1FB23A092A000C563C4 /* Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD5A1FE23A092A000C563C4 /* Shared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shared.h; sourceTree = "<group>"; };
 		1BD5A1FF23A092A000C563C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BEC25D323A0CD14005ABA4E /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		5825F6BFDA1C69FDD4E1B5D8 /* Pods-Shared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared.release.xcconfig"; path = "Target Support Files/Pods-Shared/Pods-Shared.release.xcconfig"; sourceTree = "<group>"; };
 		5AC65FC4D89199C5DA073C82 /* Pods-Shared.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared.debug.xcconfig"; path = "Target Support Files/Pods-Shared/Pods-Shared.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,7 +55,6 @@
 			children = (
 				1BD5A1FE23A092A000C563C4 /* Shared.h */,
 				1BD5A1FF23A092A000C563C4 /* Info.plist */,
-				1BEC25D323A0CD14005ABA4E /* Storyboarded.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -186,7 +183,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BEC25D423A0CD14005ABA4E /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

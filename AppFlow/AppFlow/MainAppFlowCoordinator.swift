@@ -19,7 +19,7 @@ open class MainAppFlowCoordinator: AppFlowCoordinator {
     }
     
     public func start() {
-        let vc = HomeViewController.instantiate()
+        let vc = HomeViewController()
         navigationController.pushViewController(vc, animated: false)
     }
 }

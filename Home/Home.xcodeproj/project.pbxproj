@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B41AFB123A21755001D557B /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B41AFB023A21755001D557B /* HomeView.xib */; };
 		1BD5A21523A093E600C563C4 /* Home.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD5A21323A093E600C563C4 /* Home.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1BEC260D23A0D628005ABA4E /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEC260A23A0D628005ABA4E /* HomePresenter.swift */; };
 		1BEC260E23A0D628005ABA4E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEC260B23A0D628005ABA4E /* HomeViewController.swift */; };
-		1BEC264A23A0F479005ABA4E /* Home.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 1BEC260C23A0D628005ABA4E /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B41AFB023A21755001D557B /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
 		1BD5A21023A093E600C563C4 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD5A21323A093E600C563C4 /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
 		1BD5A21423A093E600C563C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BEC260A23A0D628005ABA4E /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		1BEC260B23A0D628005ABA4E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		1BEC260C23A0D628005ABA4E /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		1BEC260F23A0D7AC005ABA4E /* AppCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BEC261023A0D7AC005ABA4E /* AppFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BEC261123A0D7AC005ABA4E /* HomeFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HomeFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,9 +64,9 @@
 			children = (
 				1BD5A21323A093E600C563C4 /* Home.h */,
 				1BD5A21423A093E600C563C4 /* Info.plist */,
-				1BEC260C23A0D628005ABA4E /* Home.storyboard */,
 				1BEC260A23A0D628005ABA4E /* HomePresenter.swift */,
 				1BEC260B23A0D628005ABA4E /* HomeViewController.swift */,
+				1B41AFB023A21755001D557B /* HomeView.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -165,6 +165,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B41AFB123A21755001D557B /* HomeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +201,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BEC264A23A0F479005ABA4E /* Home.storyboard in Sources */,
 				1BEC260D23A0D628005ABA4E /* HomePresenter.swift in Sources */,
 				1BEC260E23A0D628005ABA4E /* HomeViewController.swift in Sources */,
 			);
@@ -348,7 +348,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kodingkita.Home;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -377,7 +377,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kodingkita.Home;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

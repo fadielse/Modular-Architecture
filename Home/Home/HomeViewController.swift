@@ -13,9 +13,19 @@ import UIKit
 
 final public class HomeViewController: UIViewController {
     
+    public init() {
+        super.init(nibName: "HomeView", bundle: Bundle(for: type(of: self)))
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
     public var screenName: String? { get { return "Home" } }
     
     // MARK: Properties
+    
+    @IBOutlet weak var homeLabel: UILabel!
     
     var presenter: HomeViewPresenter!
     
@@ -28,7 +38,7 @@ final public class HomeViewController: UIViewController {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("xxxxxxx")
     }
 }
 
@@ -36,19 +46,4 @@ final public class HomeViewController: UIViewController {
 
 extension HomeViewController: HomeView {
     // TODO: implement view methods
-}
-
-public extension  HomeViewController {
-    
-    static func instantiate() -> Self {
-        let id = String(describing: self)
-        let storyboardBundle = Bundle(for: self)
-        let storyboard = UIStoryboard(name: "Home", bundle: storyboardBundle)
-
-        if #available(iOS 13.0, *) {
-            return storyboard.instantiateViewController(identifier: id) as! Self
-        } else {
-            return storyboard.instantiateViewController(withIdentifier: id) as! Self
-        }
-    }
 }
