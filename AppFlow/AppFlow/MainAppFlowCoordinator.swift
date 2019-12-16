@@ -7,11 +7,11 @@
 //
 
 import UIKit
-import Home
+import HomeFlow
 
-open class MainAppFlowCoordinator: AppFlowCoordinator {
+open class MainAppFlowCoordinator: AppFlowProtocol {
     
-    public var childCoordinators = [AppFlowCoordinator]()
+    public var childCoordinators = [AppFlowProtocol]()
     public var navigationController: UINavigationController
     
     public init(navigationController: UINavigationController) {
@@ -19,7 +19,7 @@ open class MainAppFlowCoordinator: AppFlowCoordinator {
     }
     
     public func start() {
-        let vc = HomeViewController()
-        navigationController.pushViewController(vc, animated: false)
+//        let vc = 
+//        navigationController.pushViewController(vc, animated: false)
     }
 }

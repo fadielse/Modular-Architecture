@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B1F439223A7288E00545C4B /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F439123A7288E00545C4B /* ProfilePresenter.swift */; };
+		1B1F439323A7288E00545C4B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F438F23A7288E00545C4B /* ProfileViewController.swift */; };
+		1B1F439523A728D800545C4B /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B1F439423A728D800545C4B /* ProfileView.xib */; };
 		1BD5A24A23A0A59C00C563C4 /* Profile.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD5A24823A0A59C00C563C4 /* Profile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E1CBECD56085895E90B2D7A /* Pods_Profile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A12B0806A0A09E90B710F1 /* Pods_Profile.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B1F438F23A7288E00545C4B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1B1F439123A7288E00545C4B /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		1B1F439423A728D800545C4B /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
 		1BD5A24523A0A59C00C563C4 /* Profile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Profile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD5A24823A0A59C00C563C4 /* Profile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
 		1BD5A24923A0A59C00C563C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +61,9 @@
 			children = (
 				1BD5A24823A0A59C00C563C4 /* Profile.h */,
 				1BD5A24923A0A59C00C563C4 /* Info.plist */,
+				1B1F439123A7288E00545C4B /* ProfilePresenter.swift */,
+				1B1F438F23A7288E00545C4B /* ProfileViewController.swift */,
+				1B1F439423A728D800545C4B /* ProfileView.xib */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -121,6 +130,7 @@
 				TargetAttributes = {
 					1BD5A24423A0A59C00C563C4 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -147,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B1F439523A728D800545C4B /* ProfileView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +193,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B1F439323A7288E00545C4B /* ProfileViewController.swift in Sources */,
+				1B1F439223A7288E00545C4B /* ProfilePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +325,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2B27E8C677697C768BE72809 /* Pods-Profile.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = L4A72M4SRA;
@@ -330,6 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kodingkita.Profile;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -339,6 +354,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DDBA4E5FE27572480839A13A /* Pods-Profile.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = L4A72M4SRA;

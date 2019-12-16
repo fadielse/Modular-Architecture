@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B1F438923A727A600545C4B /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F438823A727A600545C4B /* CategoryViewController.swift */; };
+		1B1F438A23A727A600545C4B /* CategoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F438723A727A600545C4B /* CategoryPresenter.swift */; };
+		1B1F438C23A7281E00545C4B /* CategoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B1F438B23A7281E00545C4B /* CategoryView.xib */; };
 		1BD5A23523A0A4C100C563C4 /* Category.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD5A23323A0A4C100C563C4 /* Category.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A881362E73CD9AC0B02E0B22 /* Pods_Category.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A41793B21A81CFD1E7D3B5 /* Pods_Category.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B1F438723A727A600545C4B /* CategoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresenter.swift; sourceTree = "<group>"; };
+		1B1F438823A727A600545C4B /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		1B1F438B23A7281E00545C4B /* CategoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryView.xib; sourceTree = "<group>"; };
 		1BD5A23023A0A4C100C563C4 /* Category.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Category.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD5A23323A0A4C100C563C4 /* Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
 		1BD5A23423A0A4C100C563C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +61,9 @@
 			children = (
 				1BD5A23323A0A4C100C563C4 /* Category.h */,
 				1BD5A23423A0A4C100C563C4 /* Info.plist */,
+				1B1F438723A727A600545C4B /* CategoryPresenter.swift */,
+				1B1F438823A727A600545C4B /* CategoryViewController.swift */,
+				1B1F438B23A7281E00545C4B /* CategoryView.xib */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -121,6 +130,7 @@
 				TargetAttributes = {
 					1BD5A22F23A0A4C100C563C4 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -147,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B1F438C23A7281E00545C4B /* CategoryView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +193,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B1F438A23A727A600545C4B /* CategoryPresenter.swift in Sources */,
+				1B1F438923A727A600545C4B /* CategoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +325,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A83CD599BFCD083BED751FDB /* Pods-Category.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = L4A72M4SRA;
@@ -330,6 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kodingkita.Category;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -339,6 +354,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D3BC8AF12F137A4731670C1F /* Pods-Category.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = L4A72M4SRA;

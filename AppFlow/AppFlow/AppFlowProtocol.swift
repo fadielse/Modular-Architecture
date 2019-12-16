@@ -1,5 +1,5 @@
 //
-//  AppFlowCoordinator.swift
+//  AppFlowProtocol.swift
 //  AppFlow
 //
 //  Created by Fadilah Hasan on 11/12/19.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-public protocol AppFlowCoordinator {
+public protocol AppFlowProtocol {
     
-    var childCoordinators: [AppFlowCoordinator] { get set }
+    var childCoordinators: [AppFlowProtocol] { get set }
     var navigationController: UINavigationController { get set }
     
     func start()
