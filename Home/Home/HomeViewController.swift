@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+import FLXFlow
+
 // MARK: - HomeViewController
 
 final public class HomeViewController: UIViewController {
@@ -22,6 +24,7 @@ final public class HomeViewController: UIViewController {
     }
     
     public var screenName: String? { get { return "Home" } }
+    public var tapFlowInteractor: FlowInteractorProtocol?
     
     // MARK: Properties
     

@@ -12,17 +12,14 @@ import AppFlow
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    var coordinator: MainAppFlowCoordinator?
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let navigationController = UINavigationController()
-        coordinator = MainAppFlowCoordinator(navigationController: navigationController)
-        coordinator?.start()
+        let appFlowController = AppFlowController()
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = navigationController
+        window?.rootViewController = appFlowController
         window?.makeKeyAndVisible()
         
         return true

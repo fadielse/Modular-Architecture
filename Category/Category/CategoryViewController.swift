@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+import FLXFlow
+
 // MARK: - CatgoryViewController
 
 final public class CategoryViewController: UIViewController {
@@ -22,6 +24,7 @@ final public class CategoryViewController: UIViewController {
     }
     
     public var screenName: String? { get { return "Category" } }
+    public var tapFlowInteractor: FlowInteractorProtocol?
     
     // MARK: Properties
     

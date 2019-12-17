@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B1F439B23A72F3200545C4B /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F439A23A72F3200545C4B /* HomeNavigationController.swift */; };
+		1B76C69823A888D300309D4A /* HomeFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B76C69723A888D300309D4A /* HomeFlowController.swift */; };
+		1B76C69C23A8895200309D4A /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B76C69B23A8895200309D4A /* HomeNavigationController.swift */; };
+		1B76C69F23A88A3900309D4A /* PresentModalFeatureTapFlowInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B76C69E23A88A3900309D4A /* PresentModalFeatureTapFlowInteractor.swift */; };
+		1B76C6A523A88BF300309D4A /* FlowAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B76C6A423A88BF300309D4A /* FlowAction.swift */; };
 		1BEC25E623A0CFCD005ABA4E /* HomeFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BEC25E423A0CFCD005ABA4E /* HomeFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1BEC25ED23A0D05F005ABA4E /* HomeFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEC25EC23A0D05F005ABA4E /* HomeFlowCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1B1F439A23A72F3200545C4B /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
+		1B76C69723A888D300309D4A /* HomeFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowController.swift; sourceTree = "<group>"; };
+		1B76C69B23A8895200309D4A /* HomeNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
+		1B76C69E23A88A3900309D4A /* PresentModalFeatureTapFlowInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentModalFeatureTapFlowInteractor.swift; sourceTree = "<group>"; };
+		1B76C6A423A88BF300309D4A /* FlowAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowAction.swift; sourceTree = "<group>"; };
 		1BEC25E123A0CFCD005ABA4E /* HomeFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HomeFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BEC25E423A0CFCD005ABA4E /* HomeFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeFlow.h; sourceTree = "<group>"; };
 		1BEC25E523A0CFCD005ABA4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BEC25EC23A0D05F005ABA4E /* HomeFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowCoordinator.swift; sourceTree = "<group>"; };
 		1BEC25EF23A0D0D4005ABA4E /* AppCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BEC25F023A0D0D4005ABA4E /* AppFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BEC25F123A0D0D4005ABA4E /* Category.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Category.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B76C69D23A88A2700309D4A /* FlowInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				1B76C69E23A88A3900309D4A /* PresentModalFeatureTapFlowInteractor.swift */,
+			);
+			path = FlowInteractor;
+			sourceTree = "<group>";
+		};
 		1BEC25D723A0CFCD005ABA4E = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +70,11 @@
 			isa = PBXGroup;
 			children = (
 				1BEC25E423A0CFCD005ABA4E /* HomeFlow.h */,
-				1BEC25EC23A0D05F005ABA4E /* HomeFlowCoordinator.swift */,
-				1B1F439A23A72F3200545C4B /* HomeNavigationController.swift */,
 				1BEC25E523A0CFCD005ABA4E /* Info.plist */,
+				1B76C6A423A88BF300309D4A /* FlowAction.swift */,
+				1B76C69723A888D300309D4A /* HomeFlowController.swift */,
+				1B76C69B23A8895200309D4A /* HomeNavigationController.swift */,
+				1B76C69D23A88A2700309D4A /* FlowInteractor */,
 			);
 			path = HomeFlow;
 			sourceTree = "<group>";
@@ -158,8 +172,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BEC25ED23A0D05F005ABA4E /* HomeFlowCoordinator.swift in Sources */,
-				1B1F439B23A72F3200545C4B /* HomeNavigationController.swift in Sources */,
+				1B76C69C23A8895200309D4A /* HomeNavigationController.swift in Sources */,
+				1B76C6A523A88BF300309D4A /* FlowAction.swift in Sources */,
+				1B76C69823A888D300309D4A /* HomeFlowController.swift in Sources */,
+				1B76C69F23A88A3900309D4A /* PresentModalFeatureTapFlowInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

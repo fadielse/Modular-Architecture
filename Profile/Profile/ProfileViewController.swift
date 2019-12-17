@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+import FLXFlow
+
 // MARK: - ProfileViewController
 
 final public class ProfileViewController: UIViewController {
@@ -22,6 +24,7 @@ final public class ProfileViewController: UIViewController {
     }
     
     public var screenName: String? { get { return "Profile" } }
+    public var tapFlowInteractor: FlowInteractorProtocol?
     
     // MARK: Properties
     

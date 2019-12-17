@@ -2,11 +2,12 @@
 //  HomeNavigationController.swift
 //  HomeFlow
 //
-//  Created by Fadilah Hasan on 16/12/19.
+//  Created by Fadilah Hasan on 17/12/19.
 //  Copyright © 2019 Fadilah Hasan. All rights reserved.
 //
 
-import UIKit
+// Common
+import FLXFlow
 
 final public class HomeNavigationController: UITabBarController {}
 

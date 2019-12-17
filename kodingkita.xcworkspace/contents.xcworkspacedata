@@ -17,7 +17,7 @@
             location = "group:FLXFlow/FLXFlow/FLXFlow.xcodeproj">
          </FileRef>
          <FileRef
-            location = "group:Shared/Shared.xcodeproj">
+            location = "group:SharedEntities/SharedEntities/SharedEntities.xcodeproj">
          </FileRef>
          <FileRef
             location = "group:UserPreferenceService/UserPreferenceService.xcodeproj">
@@ -27,10 +27,10 @@
          location = "container:"
          name = "Feature">
          <FileRef
-            location = "group:Home/Home.xcodeproj">
+            location = "group:Category/Category.xcodeproj">
          </FileRef>
          <FileRef
-            location = "group:Category/Category.xcodeproj">
+            location = "group:Home/Home.xcodeproj">
          </FileRef>
          <FileRef
             location = "group:Profile/Profile.xcodeproj">

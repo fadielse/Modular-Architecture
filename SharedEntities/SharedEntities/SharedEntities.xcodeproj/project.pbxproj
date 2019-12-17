@@ -7,125 +7,102 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BD5A20023A092A000C563C4 /* Shared.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD5A1FE23A092A000C563C4 /* Shared.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E965F1C7D357A6808F736625 /* Pods_Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB609BFA0CCA623C23C9613 /* Pods_Shared.framework */; };
+		DA2AE48D2248FCBA004FD237 /* OriginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2AE48C2248FCBA004FD237 /* OriginEntity.swift */; };
+		DAB476CF2248E05F00CC98F9 /* SharedEntities.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB476CD2248E05F00CC98F9 /* SharedEntities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0AB609BFA0CCA623C23C9613 /* Pods_Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BD5A1FB23A092A000C563C4 /* Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BD5A1FE23A092A000C563C4 /* Shared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shared.h; sourceTree = "<group>"; };
-		1BD5A1FF23A092A000C563C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5825F6BFDA1C69FDD4E1B5D8 /* Pods-Shared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared.release.xcconfig"; path = "Target Support Files/Pods-Shared/Pods-Shared.release.xcconfig"; sourceTree = "<group>"; };
-		5AC65FC4D89199C5DA073C82 /* Pods-Shared.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared.debug.xcconfig"; path = "Target Support Files/Pods-Shared/Pods-Shared.debug.xcconfig"; sourceTree = "<group>"; };
+		DA2AE48C2248FCBA004FD237 /* OriginEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginEntity.swift; sourceTree = "<group>"; };
+		DAB476CA2248E05F00CC98F9 /* SharedEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB476CD2248E05F00CC98F9 /* SharedEntities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedEntities.h; sourceTree = "<group>"; };
+		DAB476CE2248E05F00CC98F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1BD5A1F823A092A000C563C4 /* Frameworks */ = {
+		DAB476C72248E05F00CC98F9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E965F1C7D357A6808F736625 /* Pods_Shared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1BD5A1F123A092A000C563C4 = {
+		DAB476C02248E05F00CC98F9 = {
 			isa = PBXGroup;
 			children = (
-				1BD5A1FD23A092A000C563C4 /* Shared */,
-				1BD5A1FC23A092A000C563C4 /* Products */,
-				2A934336CC2825D9E83FC259 /* Pods */,
-				E15346A37F563889D764C8D8 /* Frameworks */,
+				DAB476CC2248E05F00CC98F9 /* SharedEntities */,
+				DAB476CB2248E05F00CC98F9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1BD5A1FC23A092A000C563C4 /* Products */ = {
+		DAB476CB2248E05F00CC98F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1BD5A1FB23A092A000C563C4 /* Shared.framework */,
+				DAB476CA2248E05F00CC98F9 /* SharedEntities.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1BD5A1FD23A092A000C563C4 /* Shared */ = {
+		DAB476CC2248E05F00CC98F9 /* SharedEntities */ = {
 			isa = PBXGroup;
 			children = (
-				1BD5A1FE23A092A000C563C4 /* Shared.h */,
-				1BD5A1FF23A092A000C563C4 /* Info.plist */,
+				DA2AE48C2248FCBA004FD237 /* OriginEntity.swift */,
+				DAB476CD2248E05F00CC98F9 /* SharedEntities.h */,
+				DAB476CE2248E05F00CC98F9 /* Info.plist */,
 			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		2A934336CC2825D9E83FC259 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5AC65FC4D89199C5DA073C82 /* Pods-Shared.debug.xcconfig */,
-				5825F6BFDA1C69FDD4E1B5D8 /* Pods-Shared.release.xcconfig */,
-			);
-			name = Pods;
-			path = ../Pods;
-			sourceTree = "<group>";
-		};
-		E15346A37F563889D764C8D8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0AB609BFA0CCA623C23C9613 /* Pods_Shared.framework */,
-			);
-			name = Frameworks;
+			path = SharedEntities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1BD5A1F623A092A000C563C4 /* Headers */ = {
+		DAB476C52248E05F00CC98F9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BD5A20023A092A000C563C4 /* Shared.h in Headers */,
+				DAB476CF2248E05F00CC98F9 /* SharedEntities.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1BD5A1FA23A092A000C563C4 /* Shared */ = {
+		DAB476C92248E05F00CC98F9 /* SharedEntities */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1BD5A20323A092A000C563C4 /* Build configuration list for PBXNativeTarget "Shared" */;
+			buildConfigurationList = DAB476D22248E05F00CC98F9 /* Build configuration list for PBXNativeTarget "SharedEntities" */;
 			buildPhases = (
-				5288CCAE3EAD5E8C7F3EDAB2 /* [CP] Check Pods Manifest.lock */,
-				1BD5A1F623A092A000C563C4 /* Headers */,
-				1BD5A1F723A092A000C563C4 /* Sources */,
-				1BD5A1F823A092A000C563C4 /* Frameworks */,
-				1BD5A1F923A092A000C563C4 /* Resources */,
+				DAB476C52248E05F00CC98F9 /* Headers */,
+				DAB476C62248E05F00CC98F9 /* Sources */,
+				DAB476C72248E05F00CC98F9 /* Frameworks */,
+				DAB476C82248E05F00CC98F9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Shared;
-			productName = Shared;
-			productReference = 1BD5A1FB23A092A000C563C4 /* Shared.framework */;
+			name = SharedEntities;
+			productName = SharedEntities;
+			productReference = DAB476CA2248E05F00CC98F9 /* SharedEntities.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1BD5A1F223A092A000C563C4 /* Project object */ = {
+		DAB476C12248E05F00CC98F9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1120;
-				ORGANIZATIONNAME = "Fadilah Hasan";
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Mark Jarecki";
 				TargetAttributes = {
-					1BD5A1FA23A092A000C563C4 = {
-						CreatedOnToolsVersion = 11.2.1;
-						LastSwiftMigration = 1120;
+					DAB476C92248E05F00CC98F9 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
-			buildConfigurationList = 1BD5A1F523A092A000C563C4 /* Build configuration list for PBXProject "Shared" */;
+			buildConfigurationList = DAB476C42248E05F00CC98F9 /* Build configuration list for PBXProject "SharedEntities" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -133,18 +110,18 @@
 				en,
 				Base,
 			);
-			mainGroup = 1BD5A1F123A092A000C563C4;
-			productRefGroup = 1BD5A1FC23A092A000C563C4 /* Products */;
+			mainGroup = DAB476C02248E05F00CC98F9;
+			productRefGroup = DAB476CB2248E05F00CC98F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1BD5A1FA23A092A000C563C4 /* Shared */,
+				DAB476C92248E05F00CC98F9 /* SharedEntities */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1BD5A1F923A092A000C563C4 /* Resources */ = {
+		DAB476C82248E05F00CC98F9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -153,43 +130,19 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		5288CCAE3EAD5E8C7F3EDAB2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Shared-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		1BD5A1F723A092A000C563C4 /* Sources */ = {
+		DAB476C62248E05F00CC98F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA2AE48D2248FCBA004FD237 /* OriginEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1BD5A20123A092A000C563C4 /* Debug */ = {
+		DAB476D02248E05F00CC98F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -221,6 +174,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -240,7 +194,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -252,7 +206,7 @@
 			};
 			name = Debug;
 		};
-		1BD5A20223A092A000C563C4 /* Release */ = {
+		DAB476D12248E05F00CC98F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -284,6 +238,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -297,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -309,18 +264,18 @@
 			};
 			name = Release;
 		};
-		1BD5A20423A092A000C563C4 /* Debug */ = {
+		DAB476D32248E05F00CC98F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5AC65FC4D89199C5DA073C82 /* Pods-Shared.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = L4A72M4SRA;
+				DEVELOPMENT_TEAM = T2J2MP846S;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Shared/Info.plist;
+				INFOPLIST_FILE = SharedEntities/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -329,7 +284,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kodingkita.Shared;
+				PRODUCT_BUNDLE_IDENTIFIER = Fluxom.SharedEntities;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -338,18 +293,18 @@
 			};
 			name = Debug;
 		};
-		1BD5A20523A092A000C563C4 /* Release */ = {
+		DAB476D42248E05F00CC98F9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5825F6BFDA1C69FDD4E1B5D8 /* Pods-Shared.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = L4A72M4SRA;
+				DEVELOPMENT_TEAM = T2J2MP846S;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Shared/Info.plist;
+				INFOPLIST_FILE = SharedEntities/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,7 +313,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kodingkita.Shared;
+				PRODUCT_BUNDLE_IDENTIFIER = Fluxom.SharedEntities;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -369,25 +324,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1BD5A1F523A092A000C563C4 /* Build configuration list for PBXProject "Shared" */ = {
+		DAB476C42248E05F00CC98F9 /* Build configuration list for PBXProject "SharedEntities" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1BD5A20123A092A000C563C4 /* Debug */,
-				1BD5A20223A092A000C563C4 /* Release */,
+				DAB476D02248E05F00CC98F9 /* Debug */,
+				DAB476D12248E05F00CC98F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1BD5A20323A092A000C563C4 /* Build configuration list for PBXNativeTarget "Shared" */ = {
+		DAB476D22248E05F00CC98F9 /* Build configuration list for PBXNativeTarget "SharedEntities" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1BD5A20423A092A000C563C4 /* Debug */,
-				1BD5A20523A092A000C563C4 /* Release */,
+				DAB476D32248E05F00CC98F9 /* Debug */,
+				DAB476D42248E05F00CC98F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1BD5A1F223A092A000C563C4 /* Project object */;
+	rootObject = DAB476C12248E05F00CC98F9 /* Project object */;
 }
