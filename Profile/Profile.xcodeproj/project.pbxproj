@@ -9,14 +9,33 @@
 /* Begin PBXBuildFile section */
 		1B0C8C2923A9E5B7000CE840 /* HeaderProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0C8C2723A9E5B7000CE840 /* HeaderProfileCell.swift */; };
 		1B0C8C2A23A9E5B7000CE840 /* HeaderProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B0C8C2823A9E5B7000CE840 /* HeaderProfileCell.xib */; };
-		1B0C8C5B23AA1ABA000CE840 /* FLXFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8C5923AA1ABA000CE840 /* FLXFlow.framework */; };
-		1B0C8C5D23AA1ABA000CE840 /* Media.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8C5A23AA1ABA000CE840 /* Media.framework */; };
+		1B0C8C9D23AA28CC000CE840 /* FLXFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8C5923AA1ABA000CE840 /* FLXFlow.framework */; };
+		1B0C8C9E23AA28CC000CE840 /* FLXFlow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8C5923AA1ABA000CE840 /* FLXFlow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B0C8CA023AA28CD000CE840 /* Media.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8C5A23AA1ABA000CE840 /* Media.framework */; };
+		1B0C8CA123AA28CD000CE840 /* Media.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8C5A23AA1ABA000CE840 /* Media.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B0C8CA223AA28CE000CE840 /* Pods_Profile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A12B0806A0A09E90B710F1 /* Pods_Profile.framework */; };
+		1B0C8CA323AA28CE000CE840 /* Pods_Profile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0A12B0806A0A09E90B710F1 /* Pods_Profile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1B1F439223A7288E00545C4B /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F439123A7288E00545C4B /* ProfilePresenter.swift */; };
 		1B1F439323A7288E00545C4B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F438F23A7288E00545C4B /* ProfileViewController.swift */; };
 		1B1F439523A728D800545C4B /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B1F439423A728D800545C4B /* ProfileView.xib */; };
 		1BD5A24A23A0A59C00C563C4 /* Profile.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD5A24823A0A59C00C563C4 /* Profile.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E1CBECD56085895E90B2D7A /* Pods_Profile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A12B0806A0A09E90B710F1 /* Pods_Profile.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1B0C8C9F23AA28CC000CE840 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1B0C8CA323AA28CE000CE840 /* Pods_Profile.framework in Embed Frameworks */,
+				1B0C8C9E23AA28CC000CE840 /* FLXFlow.framework in Embed Frameworks */,
+				1B0C8CA123AA28CD000CE840 /* Media.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1B0C8C2723A9E5B7000CE840 /* HeaderProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderProfileCell.swift; sourceTree = "<group>"; };
@@ -39,9 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B0C8C5D23AA1ABA000CE840 /* Media.framework in Frameworks */,
-				1E1CBECD56085895E90B2D7A /* Pods_Profile.framework in Frameworks */,
-				1B0C8C5B23AA1ABA000CE840 /* FLXFlow.framework in Frameworks */,
+				1B0C8CA223AA28CE000CE840 /* Pods_Profile.framework in Frameworks */,
+				1B0C8CA023AA28CD000CE840 /* Media.framework in Frameworks */,
+				1B0C8C9D23AA28CC000CE840 /* FLXFlow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +150,7 @@
 				1BD5A24123A0A59C00C563C4 /* Sources */,
 				1BD5A24223A0A59C00C563C4 /* Frameworks */,
 				1BD5A24323A0A59C00C563C4 /* Resources */,
+				1B0C8C9F23AA28CC000CE840 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -350,6 +370,8 @@
 			baseConfigurationReference = 2B27E8C677697C768BE72809 /* Pods-Profile.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = L4A72M4SRA;
@@ -367,6 +389,8 @@
 				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kodingkita.Profile;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -379,6 +403,8 @@
 			baseConfigurationReference = DDBA4E5FE27572480839A13A /* Pods-Profile.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = L4A72M4SRA;
@@ -396,6 +422,8 @@
 				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kodingkita.Profile;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

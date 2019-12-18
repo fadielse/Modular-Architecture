@@ -7,16 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B0C8C4D23AA1A99000CE840 /* FLXFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8C4B23AA1A99000CE840 /* FLXFlow.framework */; };
-		1B0C8C4F23AA1A99000CE840 /* Media.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8C4C23AA1A99000CE840 /* Media.framework */; };
+		1B0C8C9123AA28BD000CE840 /* FLXFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8C4B23AA1A99000CE840 /* FLXFlow.framework */; };
+		1B0C8C9223AA28BD000CE840 /* FLXFlow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8C4B23AA1A99000CE840 /* FLXFlow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B0C8C9423AA28BF000CE840 /* Media.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8C4C23AA1A99000CE840 /* Media.framework */; };
+		1B0C8C9523AA28BF000CE840 /* Media.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8C4C23AA1A99000CE840 /* Media.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B0C8C9623AA28C0000CE840 /* Pods_Category.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A41793B21A81CFD1E7D3B5 /* Pods_Category.framework */; };
+		1B0C8C9723AA28C0000CE840 /* Pods_Category.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0A41793B21A81CFD1E7D3B5 /* Pods_Category.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1B1F438923A727A600545C4B /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F438823A727A600545C4B /* CategoryViewController.swift */; };
 		1B1F438A23A727A600545C4B /* CategoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F438723A727A600545C4B /* CategoryPresenter.swift */; };
 		1B1F438C23A7281E00545C4B /* CategoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B1F438B23A7281E00545C4B /* CategoryView.xib */; };
 		1B8D5B9823A9DDD900CD44A7 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8D5B9623A9DDD900CD44A7 /* CategoryCell.swift */; };
 		1B8D5B9923A9DDD900CD44A7 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B8D5B9723A9DDD900CD44A7 /* CategoryCell.xib */; };
 		1BD5A23523A0A4C100C563C4 /* Category.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD5A23323A0A4C100C563C4 /* Category.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A881362E73CD9AC0B02E0B22 /* Pods_Category.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A41793B21A81CFD1E7D3B5 /* Pods_Category.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1B0C8C9323AA28BD000CE840 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1B0C8C9223AA28BD000CE840 /* FLXFlow.framework in Embed Frameworks */,
+				1B0C8C9723AA28C0000CE840 /* Pods_Category.framework in Embed Frameworks */,
+				1B0C8C9523AA28BF000CE840 /* Media.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1B0C8C4B23AA1A99000CE840 /* FLXFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FLXFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,9 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B0C8C4F23AA1A99000CE840 /* Media.framework in Frameworks */,
-				A881362E73CD9AC0B02E0B22 /* Pods_Category.framework in Frameworks */,
-				1B0C8C4D23AA1A99000CE840 /* FLXFlow.framework in Frameworks */,
+				1B0C8C9423AA28BF000CE840 /* Media.framework in Frameworks */,
+				1B0C8C9623AA28C0000CE840 /* Pods_Category.framework in Frameworks */,
+				1B0C8C9123AA28BD000CE840 /* FLXFlow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +150,7 @@
 				1BD5A22C23A0A4C100C563C4 /* Sources */,
 				1BD5A22D23A0A4C100C563C4 /* Frameworks */,
 				1BD5A22E23A0A4C100C563C4 /* Resources */,
+				1B0C8C9323AA28BD000CE840 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

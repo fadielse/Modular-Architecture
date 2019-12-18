@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B0C8C5423AA1AAD000CE840 /* FLXFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8C5223AA1AAD000CE840 /* FLXFlow.framework */; };
-		1B0C8C5623AA1AAD000CE840 /* Media.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8C5323AA1AAD000CE840 /* Media.framework */; };
+		1B0C8C9823AA28C3000CE840 /* FLXFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8C5223AA1AAD000CE840 /* FLXFlow.framework */; };
+		1B0C8C9923AA28C3000CE840 /* FLXFlow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8C5223AA1AAD000CE840 /* FLXFlow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B0C8C9B23AA28C6000CE840 /* Media.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8C5323AA1AAD000CE840 /* Media.framework */; };
+		1B0C8C9C23AA28C6000CE840 /* Media.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8C5323AA1AAD000CE840 /* Media.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1B41AFB123A21755001D557B /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B41AFB023A21755001D557B /* HomeView.xib */; };
 		1B8D5B8B23A9CE7900CD44A7 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8D5B8823A9CE7900CD44A7 /* ArticleCell.swift */; };
 		1B8D5B8D23A9CE7900CD44A7 /* ArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B8D5B8A23A9CE7900CD44A7 /* ArticleCell.xib */; };
@@ -16,6 +18,21 @@
 		1BEC260D23A0D628005ABA4E /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEC260A23A0D628005ABA4E /* HomePresenter.swift */; };
 		1BEC260E23A0D628005ABA4E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEC260B23A0D628005ABA4E /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1B0C8C9A23AA28C3000CE840 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1B0C8C9923AA28C3000CE840 /* FLXFlow.framework in Embed Frameworks */,
+				1B0C8C9C23AA28C6000CE840 /* Media.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1B0C8C5223AA1AAD000CE840 /* FLXFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FLXFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,8 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B0C8C5423AA1AAD000CE840 /* FLXFlow.framework in Frameworks */,
-				1B0C8C5623AA1AAD000CE840 /* Media.framework in Frameworks */,
+				1B0C8C9823AA28C3000CE840 /* FLXFlow.framework in Frameworks */,
+				1B0C8C9B23AA28C6000CE840 /* Media.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +156,7 @@
 				1BD5A20C23A093E600C563C4 /* Sources */,
 				1BD5A20D23A093E600C563C4 /* Frameworks */,
 				1BD5A20E23A093E600C563C4 /* Resources */,
+				1B0C8C9A23AA28C3000CE840 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

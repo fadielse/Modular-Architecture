@@ -7,21 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B41AFC423A21BD6001D557B /* AppCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B41AFC323A21BD6001D557B /* AppCore.framework */; };
-		1B41AFC523A21BD6001D557B /* AppCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B41AFC323A21BD6001D557B /* AppCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B0C8CA523AA2AA8000CE840 /* AppFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8CA423AA2AA8000CE840 /* AppFlow.framework */; };
+		1B0C8CA623AA2AA8000CE840 /* AppFlow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8CA423AA2AA8000CE840 /* AppFlow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B0C8CAF23AA2B53000CE840 /* Category.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8CA823AA2B53000CE840 /* Category.framework */; };
+		1B0C8CB023AA2B53000CE840 /* Category.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8CA823AA2B53000CE840 /* Category.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B0C8CB123AA2B53000CE840 /* FLXFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8CA923AA2B53000CE840 /* FLXFlow.framework */; };
+		1B0C8CB223AA2B53000CE840 /* FLXFlow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8CA923AA2B53000CE840 /* FLXFlow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B0C8CB323AA2B53000CE840 /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8CAA23AA2B53000CE840 /* Home.framework */; };
+		1B0C8CB423AA2B53000CE840 /* Home.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8CAA23AA2B53000CE840 /* Home.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B0C8CB523AA2B53000CE840 /* HomeFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8CAB23AA2B53000CE840 /* HomeFlow.framework */; };
+		1B0C8CB623AA2B53000CE840 /* HomeFlow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8CAB23AA2B53000CE840 /* HomeFlow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B0C8CB723AA2B53000CE840 /* Media.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8CAC23AA2B53000CE840 /* Media.framework */; };
+		1B0C8CB823AA2B53000CE840 /* Media.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8CAC23AA2B53000CE840 /* Media.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B0C8CB923AA2B53000CE840 /* SharedEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8CAD23AA2B53000CE840 /* SharedEntities.framework */; };
+		1B0C8CBA23AA2B53000CE840 /* SharedEntities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8CAD23AA2B53000CE840 /* SharedEntities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B0C8CBB23AA2B53000CE840 /* UserPreferenceService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8CAE23AA2B53000CE840 /* UserPreferenceService.framework */; };
+		1B0C8CBC23AA2B53000CE840 /* UserPreferenceService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8CAE23AA2B53000CE840 /* UserPreferenceService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1BD5A1B423A090C400C563C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD5A1B323A090C400C563C4 /* AppDelegate.swift */; };
 		1BD5A1C023A090C500C563C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD5A1BE23A090C500C563C4 /* LaunchScreen.storyboard */; };
 		ED192191AEA1FB96060784F3 /* Pods_Kodingkita.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCD6BB9CCB86BCD069C03FA /* Pods_Kodingkita.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1B41AFC623A21BD6001D557B /* Embed Frameworks */ = {
+		1B0C8CA723AA2AA8000CE840 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1B41AFC523A21BD6001D557B /* AppCore.framework in Embed Frameworks */,
+				1B0C8CB023AA2B53000CE840 /* Category.framework in Embed Frameworks */,
+				1B0C8CA623AA2AA8000CE840 /* AppFlow.framework in Embed Frameworks */,
+				1B0C8CBC23AA2B53000CE840 /* UserPreferenceService.framework in Embed Frameworks */,
+				1B0C8CBA23AA2B53000CE840 /* SharedEntities.framework in Embed Frameworks */,
+				1B0C8CB223AA2B53000CE840 /* FLXFlow.framework in Embed Frameworks */,
+				1B0C8CB823AA2B53000CE840 /* Media.framework in Embed Frameworks */,
+				1B0C8CB623AA2B53000CE840 /* HomeFlow.framework in Embed Frameworks */,
+				1B0C8CB423AA2B53000CE840 /* Home.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -29,7 +50,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1B41AFC323A21BD6001D557B /* AppCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B0C8CA423AA2AA8000CE840 /* AppFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B0C8CA823AA2B53000CE840 /* Category.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Category.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B0C8CA923AA2B53000CE840 /* FLXFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FLXFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B0C8CAA23AA2B53000CE840 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B0C8CAB23AA2B53000CE840 /* HomeFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HomeFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B0C8CAC23AA2B53000CE840 /* Media.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Media.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B0C8CAD23AA2B53000CE840 /* SharedEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SharedEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B0C8CAE23AA2B53000CE840 /* UserPreferenceService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UserPreferenceService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B8D5B9223A9D1B000CD44A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BD5A1B023A090C400C563C4 /* Kodingkita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kodingkita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD5A1B323A090C400C563C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,8 +73,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B0C8CB923AA2B53000CE840 /* SharedEntities.framework in Frameworks */,
+				1B0C8CBB23AA2B53000CE840 /* UserPreferenceService.framework in Frameworks */,
+				1B0C8CA523AA2AA8000CE840 /* AppFlow.framework in Frameworks */,
+				1B0C8CB723AA2B53000CE840 /* Media.framework in Frameworks */,
 				ED192191AEA1FB96060784F3 /* Pods_Kodingkita.framework in Frameworks */,
-				1B41AFC423A21BD6001D557B /* AppCore.framework in Frameworks */,
+				1B0C8CAF23AA2B53000CE840 /* Category.framework in Frameworks */,
+				1B0C8CB323AA2B53000CE840 /* Home.framework in Frameworks */,
+				1B0C8CB123AA2B53000CE840 /* FLXFlow.framework in Frameworks */,
+				1B0C8CB523AA2B53000CE840 /* HomeFlow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +130,14 @@
 		BF5FC1677778C5BCA1535B8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1B41AFC323A21BD6001D557B /* AppCore.framework */,
+				1B0C8CA823AA2B53000CE840 /* Category.framework */,
+				1B0C8CA923AA2B53000CE840 /* FLXFlow.framework */,
+				1B0C8CAA23AA2B53000CE840 /* Home.framework */,
+				1B0C8CAB23AA2B53000CE840 /* HomeFlow.framework */,
+				1B0C8CAC23AA2B53000CE840 /* Media.framework */,
+				1B0C8CAD23AA2B53000CE840 /* SharedEntities.framework */,
+				1B0C8CAE23AA2B53000CE840 /* UserPreferenceService.framework */,
+				1B0C8CA423AA2AA8000CE840 /* AppFlow.framework */,
 				3FCD6BB9CCB86BCD069C03FA /* Pods_Kodingkita.framework */,
 			);
 			name = Frameworks;
@@ -113,7 +155,7 @@
 				1BD5A1AD23A090C400C563C4 /* Frameworks */,
 				1BD5A1AE23A090C400C563C4 /* Resources */,
 				9D765B7D38ABE7EF0F6C0A2B /* [CP] Embed Pods Frameworks */,
-				1B41AFC623A21BD6001D557B /* Embed Frameworks */,
+				1B0C8CA723AA2AA8000CE840 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -352,6 +394,7 @@
 			baseConfigurationReference = FB72C18F08EC231335BC4057 /* Pods-Kodingkita.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L4A72M4SRA;
 				INFOPLIST_FILE = Kodingkita/Info.plist;
@@ -362,6 +405,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kodingkita.Kodingkita;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -372,6 +416,7 @@
 			baseConfigurationReference = D9871E2EE0323557449D5C05 /* Pods-Kodingkita.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L4A72M4SRA;
 				INFOPLIST_FILE = Kodingkita/Info.plist;
@@ -382,6 +427,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kodingkita.Kodingkita;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
