@@ -19,6 +19,5 @@ extension HomeNavigationController: UITabBarControllerDelegate {
     public func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         
         tabBarController.view?.layoutIfNeeded()
-        
     }
 }

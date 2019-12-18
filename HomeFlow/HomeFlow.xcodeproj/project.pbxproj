@@ -7,18 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B0C8C7E23AA217E000CE840 /* Category.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B76C6F223A8C44300309D4A /* Category.framework */; };
+		1B0C8C7F23AA217E000CE840 /* Category.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B76C6F223A8C44300309D4A /* Category.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B0C8C8123AA217F000CE840 /* FLXFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B76C6E823A8C38C00309D4A /* FLXFlow.framework */; };
+		1B0C8C8223AA217F000CE840 /* FLXFlow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B76C6E823A8C38C00309D4A /* FLXFlow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B0C8C8323AA2180000CE840 /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B76C6F323A8C44300309D4A /* Home.framework */; };
+		1B0C8C8423AA2180000CE840 /* Home.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B76C6F323A8C44300309D4A /* Home.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B0C8C8523AA2182000CE840 /* Profile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B76C6F423A8C44300309D4A /* Profile.framework */; };
+		1B0C8C8623AA2182000CE840 /* Profile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B76C6F423A8C44300309D4A /* Profile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B0C8C8723AA2183000CE840 /* SharedEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B76C6E923A8C38C00309D4A /* SharedEntities.framework */; };
+		1B0C8C8823AA2183000CE840 /* SharedEntities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B76C6E923A8C38C00309D4A /* SharedEntities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B0C8C8923AA2184000CE840 /* UserPreferenceService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B76C6EA23A8C38C00309D4A /* UserPreferenceService.framework */; };
+		1B0C8C8A23AA2184000CE840 /* UserPreferenceService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B76C6EA23A8C38C00309D4A /* UserPreferenceService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1B76C69823A888D300309D4A /* HomeFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B76C69723A888D300309D4A /* HomeFlowController.swift */; };
 		1B76C69C23A8895200309D4A /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B76C69B23A8895200309D4A /* HomeNavigationController.swift */; };
 		1B76C69F23A88A3900309D4A /* PresentModalFeatureTapFlowInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B76C69E23A88A3900309D4A /* PresentModalFeatureTapFlowInteractor.swift */; };
-		1B76C6A523A88BF300309D4A /* FlowAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B76C6A423A88BF300309D4A /* FlowAction.swift */; };
+		1B76C6A523A88BF300309D4A /* HomeFlowAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B76C6A423A88BF300309D4A /* HomeFlowAction.swift */; };
 		1BEC25E623A0CFCD005ABA4E /* HomeFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BEC25E423A0CFCD005ABA4E /* HomeFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1B0C8C8023AA217E000CE840 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1B0C8C7F23AA217E000CE840 /* Category.framework in Embed Frameworks */,
+				1B0C8C8223AA217F000CE840 /* FLXFlow.framework in Embed Frameworks */,
+				1B0C8C8623AA2182000CE840 /* Profile.framework in Embed Frameworks */,
+				1B0C8C8823AA2183000CE840 /* SharedEntities.framework in Embed Frameworks */,
+				1B0C8C8A23AA2184000CE840 /* UserPreferenceService.framework in Embed Frameworks */,
+				1B0C8C8423AA2180000CE840 /* Home.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1B76C69723A888D300309D4A /* HomeFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowController.swift; sourceTree = "<group>"; };
 		1B76C69B23A8895200309D4A /* HomeNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
 		1B76C69E23A88A3900309D4A /* PresentModalFeatureTapFlowInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentModalFeatureTapFlowInteractor.swift; sourceTree = "<group>"; };
-		1B76C6A423A88BF300309D4A /* FlowAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowAction.swift; sourceTree = "<group>"; };
+		1B76C6A423A88BF300309D4A /* HomeFlowAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeFlowAction.swift; sourceTree = "<group>"; };
+		1B76C6E823A8C38C00309D4A /* FLXFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FLXFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B76C6E923A8C38C00309D4A /* SharedEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SharedEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B76C6EA23A8C38C00309D4A /* UserPreferenceService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UserPreferenceService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B76C6F223A8C44300309D4A /* Category.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Category.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B76C6F323A8C44300309D4A /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B76C6F423A8C44300309D4A /* Profile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Profile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BEC25E123A0CFCD005ABA4E /* HomeFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HomeFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BEC25E423A0CFCD005ABA4E /* HomeFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeFlow.h; sourceTree = "<group>"; };
 		1BEC25E523A0CFCD005ABA4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +72,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B0C8C8723AA2183000CE840 /* SharedEntities.framework in Frameworks */,
+				1B0C8C8523AA2182000CE840 /* Profile.framework in Frameworks */,
+				1B0C8C7E23AA217E000CE840 /* Category.framework in Frameworks */,
+				1B0C8C8123AA217F000CE840 /* FLXFlow.framework in Frameworks */,
+				1B0C8C8923AA2184000CE840 /* UserPreferenceService.framework in Frameworks */,
+				1B0C8C8323AA2180000CE840 /* Home.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +114,7 @@
 			children = (
 				1BEC25E423A0CFCD005ABA4E /* HomeFlow.h */,
 				1BEC25E523A0CFCD005ABA4E /* Info.plist */,
-				1B76C6A423A88BF300309D4A /* FlowAction.swift */,
+				1B76C6A423A88BF300309D4A /* HomeFlowAction.swift */,
 				1B76C69723A888D300309D4A /* HomeFlowController.swift */,
 				1B76C69B23A8895200309D4A /* HomeNavigationController.swift */,
 				1B76C69D23A88A2700309D4A /* FlowInteractor */,
@@ -82,6 +125,12 @@
 		1BEC25EE23A0D0D4005ABA4E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1B76C6F223A8C44300309D4A /* Category.framework */,
+				1B76C6F323A8C44300309D4A /* Home.framework */,
+				1B76C6F423A8C44300309D4A /* Profile.framework */,
+				1B76C6E823A8C38C00309D4A /* FLXFlow.framework */,
+				1B76C6E923A8C38C00309D4A /* SharedEntities.framework */,
+				1B76C6EA23A8C38C00309D4A /* UserPreferenceService.framework */,
 				1BEC25EF23A0D0D4005ABA4E /* AppCore.framework */,
 				1BEC25F023A0D0D4005ABA4E /* AppFlow.framework */,
 				1BEC25F123A0D0D4005ABA4E /* Category.framework */,
@@ -114,6 +163,7 @@
 				1BEC25DD23A0CFCD005ABA4E /* Sources */,
 				1BEC25DE23A0CFCD005ABA4E /* Frameworks */,
 				1BEC25DF23A0CFCD005ABA4E /* Resources */,
+				1B0C8C8023AA217E000CE840 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,7 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B76C69C23A8895200309D4A /* HomeNavigationController.swift in Sources */,
-				1B76C6A523A88BF300309D4A /* FlowAction.swift in Sources */,
+				1B76C6A523A88BF300309D4A /* HomeFlowAction.swift in Sources */,
 				1B76C69823A888D300309D4A /* HomeFlowController.swift in Sources */,
 				1B76C69F23A88A3900309D4A /* PresentModalFeatureTapFlowInteractor.swift in Sources */,
 			);

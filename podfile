@@ -19,18 +19,6 @@ target 'AppCore' do
 
 end
 
-# Shared Module
-def shared_pods
-  core_pods
-  
-end
-
-target 'Shared' do
-  project 'Shared/Shared.project'
-  shared_pods
-
-end
-
 # Application
 def kodingkita_pods
   core_pods

@@ -11,11 +11,13 @@ import SwiftyJSON
 
 protocol HomeViewPresenter: class {
     init(view: HomeView)
-    // TODO: Declare view presenter methods
+    
+    func setupView()
 }
 
 protocol HomeView: class {
-    // TODO: Declare view methods
+    func setupNavigationBar()
+    func setupTableView()
 }
 
 class HomePresenter: HomeViewPresenter {
@@ -31,5 +33,8 @@ class HomePresenter: HomeViewPresenter {
         self.view = view
     }
     
-    // TODO: Implement view presenter methods
+    func setupView() {
+        view.setupNavigationBar()
+        view.setupTableView()
+    }
 }

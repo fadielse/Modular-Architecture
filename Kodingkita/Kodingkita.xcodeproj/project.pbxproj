@@ -10,7 +10,6 @@
 		1B41AFC423A21BD6001D557B /* AppCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B41AFC323A21BD6001D557B /* AppCore.framework */; };
 		1B41AFC523A21BD6001D557B /* AppCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B41AFC323A21BD6001D557B /* AppCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1BD5A1B423A090C400C563C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD5A1B323A090C400C563C4 /* AppDelegate.swift */; };
-		1BD5A1BD23A090C500C563C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BD5A1BC23A090C500C563C4 /* Assets.xcassets */; };
 		1BD5A1C023A090C500C563C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD5A1BE23A090C500C563C4 /* LaunchScreen.storyboard */; };
 		ED192191AEA1FB96060784F3 /* Pods_Kodingkita.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCD6BB9CCB86BCD069C03FA /* Pods_Kodingkita.framework */; };
 /* End PBXBuildFile section */
@@ -30,14 +29,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1B41AFB223A217C0001D557B /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B41AFC323A21BD6001D557B /* AppCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B8D5B9223A9D1B000CD44A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BD5A1B023A090C400C563C4 /* Kodingkita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kodingkita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD5A1B323A090C400C563C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1BD5A1BC23A090C500C563C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BD5A1BF23A090C500C563C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BD5A1C123A090C500C563C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BD5A26F23A0A73300C563C4 /* AppCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FCD6BB9CCB86BCD069C03FA /* Pods_Kodingkita.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kodingkita.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9871E2EE0323557449D5C05 /* Pods-Kodingkita.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kodingkita.release.xcconfig"; path = "Target Support Files/Pods-Kodingkita/Pods-Kodingkita.release.xcconfig"; sourceTree = "<group>"; };
 		FB72C18F08EC231335BC4057 /* Pods-Kodingkita.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kodingkita.debug.xcconfig"; path = "Target Support Files/Pods-Kodingkita/Pods-Kodingkita.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,8 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				1BD5A1B323A090C400C563C4 /* AppDelegate.swift */,
-				1BD5A1BC23A090C500C563C4 /* Assets.xcassets */,
 				1BD5A1BE23A090C500C563C4 /* LaunchScreen.storyboard */,
+				1B8D5B9223A9D1B000CD44A7 /* Assets.xcassets */,
 				1BD5A1C123A090C500C563C4 /* Info.plist */,
 			);
 			path = Kodingkita;
@@ -99,8 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				1B41AFC323A21BD6001D557B /* AppCore.framework */,
-				1B41AFB223A217C0001D557B /* Home.framework */,
-				1BD5A26F23A0A73300C563C4 /* AppCore.framework */,
 				3FCD6BB9CCB86BCD069C03FA /* Pods_Kodingkita.framework */,
 			);
 			name = Frameworks;
@@ -168,7 +163,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BD5A1C023A090C500C563C4 /* LaunchScreen.storyboard in Resources */,
-				1BD5A1BD23A090C500C563C4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

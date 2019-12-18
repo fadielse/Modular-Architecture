@@ -14,6 +14,9 @@
          location = "container:"
          name = "Common">
          <FileRef
+            location = "group:Media/Media.xcodeproj">
+         </FileRef>
+         <FileRef
             location = "group:FLXFlow/FLXFlow/FLXFlow.xcodeproj">
          </FileRef>
          <FileRef

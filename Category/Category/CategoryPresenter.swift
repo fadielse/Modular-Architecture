@@ -11,11 +11,12 @@ import SwiftyJSON
 
 protocol CategoryViewPresenter: class {
     init(view: CategoryView)
-    // TODO: Declare view presenter methods
+    
+    func setupView()
 }
 
 protocol CategoryView: class {
-    // TODO: Declare view methods
+    func setupCollectionView()
 }
 
 class CategoryPresenter: CategoryViewPresenter {
@@ -31,5 +32,7 @@ class CategoryPresenter: CategoryViewPresenter {
         self.view = view
     }
     
-    // TODO: Implement view presenter methods
+    func setupView() {
+        view.setupCollectionView()
+    }
 }

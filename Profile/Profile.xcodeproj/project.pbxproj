@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B0C8C2923A9E5B7000CE840 /* HeaderProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0C8C2723A9E5B7000CE840 /* HeaderProfileCell.swift */; };
+		1B0C8C2A23A9E5B7000CE840 /* HeaderProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B0C8C2823A9E5B7000CE840 /* HeaderProfileCell.xib */; };
+		1B0C8C5B23AA1ABA000CE840 /* FLXFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8C5923AA1ABA000CE840 /* FLXFlow.framework */; };
+		1B0C8C5D23AA1ABA000CE840 /* Media.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8C5A23AA1ABA000CE840 /* Media.framework */; };
 		1B1F439223A7288E00545C4B /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F439123A7288E00545C4B /* ProfilePresenter.swift */; };
 		1B1F439323A7288E00545C4B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F438F23A7288E00545C4B /* ProfileViewController.swift */; };
 		1B1F439523A728D800545C4B /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B1F439423A728D800545C4B /* ProfileView.xib */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B0C8C2723A9E5B7000CE840 /* HeaderProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderProfileCell.swift; sourceTree = "<group>"; };
+		1B0C8C2823A9E5B7000CE840 /* HeaderProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderProfileCell.xib; sourceTree = "<group>"; };
+		1B0C8C5923AA1ABA000CE840 /* FLXFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FLXFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B0C8C5A23AA1ABA000CE840 /* Media.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Media.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B1F438F23A7288E00545C4B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1B1F439123A7288E00545C4B /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		1B1F439423A728D800545C4B /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
@@ -31,13 +39,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B0C8C5D23AA1ABA000CE840 /* Media.framework in Frameworks */,
 				1E1CBECD56085895E90B2D7A /* Pods_Profile.framework in Frameworks */,
+				1B0C8C5B23AA1ABA000CE840 /* FLXFlow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B0C8C2623A9E592000CE840 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1B0C8C2723A9E5B7000CE840 /* HeaderProfileCell.swift */,
+				1B0C8C2823A9E5B7000CE840 /* HeaderProfileCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		1BD5A23B23A0A59C00C563C4 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +83,7 @@
 				1B1F439123A7288E00545C4B /* ProfilePresenter.swift */,
 				1B1F438F23A7288E00545C4B /* ProfileViewController.swift */,
 				1B1F439423A728D800545C4B /* ProfileView.xib */,
+				1B0C8C2623A9E592000CE840 /* Cells */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -71,6 +91,8 @@
 		70A2E26701E08077850A8020 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1B0C8C5923AA1ABA000CE840 /* FLXFlow.framework */,
+				1B0C8C5A23AA1ABA000CE840 /* Media.framework */,
 				A0A12B0806A0A09E90B710F1 /* Pods_Profile.framework */,
 			);
 			name = Frameworks;
@@ -157,6 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B0C8C2A23A9E5B7000CE840 /* HeaderProfileCell.xib in Resources */,
 				1B1F439523A728D800545C4B /* ProfileView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,6 +218,7 @@
 			files = (
 				1B1F439323A7288E00545C4B /* ProfileViewController.swift in Sources */,
 				1B1F439223A7288E00545C4B /* ProfilePresenter.swift in Sources */,
+				1B0C8C2923A9E5B7000CE840 /* HeaderProfileCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

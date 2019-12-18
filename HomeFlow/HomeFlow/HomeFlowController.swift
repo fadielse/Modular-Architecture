@@ -15,7 +15,7 @@ import Home
 import Category
 import Profile
 
-final public class HomeFlowController: TabbedFlowController, FlowActionDelegate {
+final public class HomeFlowController: TabbedFlowController {
     
     // MARK: - Initialisers
     
@@ -34,7 +34,9 @@ final public class HomeFlowController: TabbedFlowController, FlowActionDelegate 
         self.flowActionDelegate = self
         
         let home = HomeViewController()
+        let homeNavigation = UINavigationController(rootViewController: home)
         let category = CategoryViewController()
+        category.delegate = self
         let profile = ProfileViewController()
         
         // Initialise the tbar bar items
@@ -54,7 +56,7 @@ final public class HomeFlowController: TabbedFlowController, FlowActionDelegate 
         profileTabItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -14)
 
         // Set the tab bar items
-        home.tabBarItem = homeTabItem
+        homeNavigation.tabBarItem = homeTabItem
         category.tabBarItem = categoryTabItem
         profile.tabBarItem = profileTabItem
         
@@ -91,7 +93,7 @@ final public class HomeFlowController: TabbedFlowController, FlowActionDelegate 
         }
         
         // Add the tab bar items
-        navigationController.viewControllers = [home, category, profile]
+        navigationController.viewControllers = [homeNavigation, category, profile]
         
         // Set which tab is selected
         navigationController.selectedIndex = 0
@@ -99,5 +101,37 @@ final public class HomeFlowController: TabbedFlowController, FlowActionDelegate 
     
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+}
+
+extension HomeFlowController: FlowActionDelegate {
+    public func process(action: FlowAction) -> Bool {
+        switch action {
+        case HomeFlowAction.presentModalFeatureFromHome(let feature, let content):
+            presentModalFeature(from: feature, content: content)
+        case HomeFlowAction.presentModalFeatureFromCategory(let feature, let content):
+            presentModalFeature(from: feature, content: content)
+        case HomeFlowAction.presentModalFeatureFromProfile(let feature, let content):
+            presentModalFeature(from: feature, content: content)
+        default: return false
+        }
+        
+        return false
+    }
+    
+    private func presentModalFeature(from: UIViewController, content: OriginEntity) {
+        let alert = UIAlertController(title: "Wauw", message: content.featureName, preferredStyle: .alert)
+        let action = UIAlertAction(title: "Siyap", style: .cancel, handler: nil)
+        alert.addAction(action)
+        from.present(alert, animated: true, completion: nil)
+    }
+}
+
+extension HomeFlowController: CategoryViewControllerDelegate {
+    public func buttonAlertTapped(from: CategoryViewController) {
+        let alert = UIAlertController(title: "Wauw", message: "content.featureName", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Siyap", style: .cancel, handler: nil)
+        alert.addAction(action)
+        from.present(alert, animated: true, completion: nil)
     }
 }

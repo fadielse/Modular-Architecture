@@ -11,11 +11,12 @@ import SwiftyJSON
 
 protocol ProfileViewPresenter: class {
     init(view: ProfileView)
-    // TODO: Declare view presenter methods
+    
+    func setupView()
 }
 
 protocol ProfileView: class {
-    // TODO: Declare view methods
+    func setupTableView()
 }
 
 class ProfilePresenter: ProfileViewPresenter {
@@ -31,5 +32,7 @@ class ProfilePresenter: ProfileViewPresenter {
         self.view = view
     }
     
-    // TODO: Implement view presenter methods
+    func setupView() {
+        view.setupTableView()
+    }
 }

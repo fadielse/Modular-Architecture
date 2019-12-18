@@ -7,17 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B0C8C4D23AA1A99000CE840 /* FLXFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8C4B23AA1A99000CE840 /* FLXFlow.framework */; };
+		1B0C8C4F23AA1A99000CE840 /* Media.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0C8C4C23AA1A99000CE840 /* Media.framework */; };
 		1B1F438923A727A600545C4B /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F438823A727A600545C4B /* CategoryViewController.swift */; };
 		1B1F438A23A727A600545C4B /* CategoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F438723A727A600545C4B /* CategoryPresenter.swift */; };
 		1B1F438C23A7281E00545C4B /* CategoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B1F438B23A7281E00545C4B /* CategoryView.xib */; };
+		1B8D5B9823A9DDD900CD44A7 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8D5B9623A9DDD900CD44A7 /* CategoryCell.swift */; };
+		1B8D5B9923A9DDD900CD44A7 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B8D5B9723A9DDD900CD44A7 /* CategoryCell.xib */; };
 		1BD5A23523A0A4C100C563C4 /* Category.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD5A23323A0A4C100C563C4 /* Category.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A881362E73CD9AC0B02E0B22 /* Pods_Category.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A41793B21A81CFD1E7D3B5 /* Pods_Category.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B0C8C4B23AA1A99000CE840 /* FLXFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FLXFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B0C8C4C23AA1A99000CE840 /* Media.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Media.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B1F438723A727A600545C4B /* CategoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresenter.swift; sourceTree = "<group>"; };
 		1B1F438823A727A600545C4B /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		1B1F438B23A7281E00545C4B /* CategoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryView.xib; sourceTree = "<group>"; };
+		1B8D5B9623A9DDD900CD44A7 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		1B8D5B9723A9DDD900CD44A7 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 		1BD5A23023A0A4C100C563C4 /* Category.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Category.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD5A23323A0A4C100C563C4 /* Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
 		1BD5A23423A0A4C100C563C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,13 +39,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B0C8C4F23AA1A99000CE840 /* Media.framework in Frameworks */,
 				A881362E73CD9AC0B02E0B22 /* Pods_Category.framework in Frameworks */,
+				1B0C8C4D23AA1A99000CE840 /* FLXFlow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B8D5B9523A9DD7800CD44A7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1B8D5B9623A9DDD900CD44A7 /* CategoryCell.swift */,
+				1B8D5B9723A9DDD900CD44A7 /* CategoryCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		1BD5A22623A0A4C100C563C4 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +83,7 @@
 				1B1F438723A727A600545C4B /* CategoryPresenter.swift */,
 				1B1F438823A727A600545C4B /* CategoryViewController.swift */,
 				1B1F438B23A7281E00545C4B /* CategoryView.xib */,
+				1B8D5B9523A9DD7800CD44A7 /* Cells */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -81,6 +101,8 @@
 		F446CD6C8B1991B43D93F3A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1B0C8C4B23AA1A99000CE840 /* FLXFlow.framework */,
+				1B0C8C4C23AA1A99000CE840 /* Media.framework */,
 				C0A41793B21A81CFD1E7D3B5 /* Pods_Category.framework */,
 			);
 			name = Frameworks;
@@ -158,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B1F438C23A7281E00545C4B /* CategoryView.xib in Resources */,
+				1B8D5B9923A9DDD900CD44A7 /* CategoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +218,7 @@
 			files = (
 				1B1F438A23A727A600545C4B /* CategoryPresenter.swift in Sources */,
 				1B1F438923A727A600545C4B /* CategoryViewController.swift in Sources */,
+				1B8D5B9823A9DDD900CD44A7 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
